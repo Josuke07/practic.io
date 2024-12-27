@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростелеком - Практикантам</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="pic/logo3.png" class="logo3" alt="Ростелеком Логотип"></a>
+            <ul>
+              <li><a href="index.html">На начало</a></li>
+              <li><a href="register.html">Регистрация</a></li>
+               <li><a href="about.html">О нас</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="interns.html">Практикантам</a></li>
+              <li><a href="obr.html">Форма для связи</a></li>
+           </ul>
+            <div class="auth-buttons">
+                <a href="register.html"><button>Регистрация</button></a>
+                <a href="login.html"><button>Вход</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="interns-info">
+          <h2>Практикантам</h2>
+          <p>Мы предоставляем возможности для стажировок и обучения в сфере телекоммуникаций.</p>
+          <p>Для получения дополнительной информации, выберите интересующую вас тему:</p>
+      
+           <ul class="interns-links">
+              <li>
+                 <a href="#js-functions">Функции в JavaScript</a>
+              </li>
+              <li>
+                  <a href="#raster-graphics">Растровая графика</a>
+                  </li>
+               <li>
+                   <a href="#vector-graphics">Векторная графика</a>
+              <li>
+                <a href="#3d-graphics">Трехмерная графика</a>
+              </li>
+            </ul>
+      
+            <div id="js-functions" class="interns-content">
+              <h3>Функции в JavaScript</h3>
+                  <div id="js-function-example" class="interns-content-item">
+                    <h4>Пример функции</h4>
+                     <p>Функция, которая принимает массив и выводит 0 в позиции с отрицательным элементом, 2 в позиции с четным элементом:</p>
+                      <pre>
+                       </pre>
+                    <button id="input-array-button">Ввести массив</button>
+                      <div id="array-output">
+                      </div>
+                  </div>
+            </div>
+           <div id="raster-graphics" class="interns-content">
+               <h3>Растровая графика</h3>
+                       </div>
+                       <div id="raster-filters" class="tab-content active">
+                          <h4>Корректирующие фильтры</h4>
+
+                           <div class="image-container">
+                             <img id="cat-image" src="pic/cat.png" alt="Котик">
+                          </div>
+
+                         <div class="filter-buttons">
+                             <button data-filter="grayscale">Черно-белый</button>
+                              <button data-filter="sepia">Сепия</button>
+                             <button data-filter="invert">Инверсия</button>
+                              <button data-filter="brightness">Яркость</button>
+                              <button data-filter="contrast">Контраст</button>
+                              <button data-filter="reset">Сброс</button>
+                              <script src="script.js"></script>
+                         </div>
+                          <h4>Создание коллажей, Фотомонтаж</h4>
+                    
+                          <div class="collage-container">
+                              <div class="collage-canvas">
+                                <img id="" src="pic/kol.png" height="100%" alt="">
+                             </div>
+                          </div>
+                             <h4>Создание анимированных изображений</h4>
+                             <img id="" src="pic/ani.gif" height="100%" alt="">
+                       </div>
+                   </div>
+           </div>
+             <div id="vector-graphics" class="interns-content">
+              <h3>Векторная графика</h3>
+                 <div id="vector-actionscript" class="interns-content-item">
+                   <h4>Создание анимации средствами ActionScript 3.0</h4>
+                   <img id="" src="pic/ani2.gif" width="100%" height="100%" alt="">
+                 </div>
+                 <div id="vector-extrusion" class="interns-content-item">
+                  <h4>Экструзия</h4>
+                    <p>Примените эффект экструзии к изображению:</p>
+                      <div class="extrusion-container">
+                          <img id="extrusion-image" src="pic/kar3.png" alt="Логотип для экструзии">
+                            <div class="extrusion-controls">
+                               <label for="extrusion-depth">Глубина:</label>
+                                <input type="range" id="extrusion-depth" min="0" max="30" value="10">
+                              <label for="extrusion-angle">Угол:</label>
+                                <input type="range" id="extrusion-angle" min="-180" max="180" value="45">
+                                <button id="reset-extrusion">Сброс</button>
+                            </div>
+                     </div>
+                 </div>
+                  <div id="vector-layers" class="interns-content-item">
+                    <h4>Освоение приемов работы слоями. Создание сложных изображений</h4>
+                    <img id="" src="pic/hard.png" width="100%" height="100%" alt="">
+                  </div>
+             </div>
+             <div id="3d-graphics" class="interns-content">
+                <h3>Трехмерная графика</h3>
+                  <div id="3d-modeling" class="interns-content-item">
+                     <h4>Создание и редактирование трехмерных объектов</h4>
+                    <img id="" src="pic/3d.png" height="100%" alt="">
+                  </div>
+             </div>
+        </section>
+      </main>
+       <button id="back-to-top" title="Наверх"><i class="fas fa-arrow-up"></i></button>
+      <footer>
+          <div class="footer-container">
+            <div class="footer-col">
+              <h3>Ростелеком</h3>
+              <p>Про Ростелеком, все для пользователей</p>
+            </div>
+            <div class="footer-col">
+              <h3>Помощь</h3>
+              <ul>
+                  <li><a href="obr.html">Форма для связи</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Новичкам</h3>
+              <ul>
+                <li><a href="interns.html">Практикантам</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Контакты</h3>
+              <p>Адрес: г. Нальчик, ул. Ленина, д. 123</p>
+              <p>Телефон: +7 (495) 123-45-67</p>
+              <p>Email: info@rostel.com</p>
+            </div>
+         </div>
+          <div class="footer-bottom">
+              <p>&copy; 2024 Ростелеком - Все права защищены.</p>
+          </div>
+      </footer>
+      <script src="script2.js"></script>
+  </body>
+  </html>
